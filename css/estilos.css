@@ -1,0 +1,377 @@
+html
+{
+    box-sizing: border-box;
+}
+*,*::after,*::before
+{
+    box-sizing: inherit;
+}
+
+
+/********
+**Login**
+*********/
+div.contenedor
+{
+    width: 1150px;
+    margin: 0 auto; 
+    padding: 0;
+    border: 1px solid orange;
+    border-radius: 20px;
+   margin-top: 50px;
+   box-shadow: 4px 4px 4px 4px black;
+   margin-bottom: 50px;
+}
+header
+{
+    margin: 0 auto;
+}
+#buscador{
+    border-radius: 5px;
+    font-size: 20px;
+}
+div.buscar{
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: red;
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+}
+h3{
+    padding-left: 5%;
+}
+
+h3 a{
+    list-style: none;
+    text-decoration: none;
+    background-color: green;
+    color: white;
+    border-radius: 4px;
+    margin: 2px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+h3 a:hover{
+    background-color:orange;
+}
+#boton{
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+#boton:hover{
+    background-color: green;
+}
+
+div.contenido
+{
+    
+    display: inline-block;
+    width: 100%;
+    padding-left: 30px;
+}
+header img{
+    width: auto;
+    display: block;
+    margin: auto;
+}
+
+div.datos
+{
+    border-radius: 3px 3px 3px 3px;
+    text-align: center;
+    padding: 20px;
+}
+label
+{
+    font-size: 20px;
+    text-transform: uppercase;
+    color:orange;
+}
+
+div.datos input{
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 20px;
+    
+}
+
+.boton
+{
+    padding-top: 20px; 
+    margin: 20px 0;   
+}
+
+.boton a:hover{
+    background-color: red;
+}
+
+.boton a{
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+/**********
+*****menu**
+***********/
+
+div.contenido-tbody{
+    width: 100%;
+}
+
+div.contenido-thead{
+    width: 100%;
+}
+
+div.contenido-tfoot{
+    width: 100%;
+}
+div.contenedor-menu
+{
+    width: 100%;
+    margin: 0 auto; 
+    padding: 0;
+    border: 1px solid orange;
+    border-radius: 20px;
+    margin-top: 100px;
+    box-shadow: 4px 4px 4px 4px black;
+}
+
+table,thead,th,tbody,tr,td{
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 4px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+tr:nth-child(2n+2){
+    background-color: grey;
+}
+tfoot{
+   text-align: center;
+   margin: 0 auto;
+   padding: 0;
+   width: 100%;
+    margin: 0 auto;
+}
+
+td a{
+    text-decoration: none;
+    list-style: none;
+    color: red;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header p{
+    text-transform: uppercase;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/****************
+***trabajador****
+*****************/
+.contenedor-trabajador{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.contenido-datos-trabajador::after
+{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.formulario-trabajador{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.col-12
+{
+    float: left;
+    width: 100%;
+}
+
+.label-trabajador{
+    text-transform: uppercase;
+    color: orange;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px black;
+    float: left;
+    width: 50%;
+    margin: 5px 0;
+}
+.input-trabajador{
+    border-radius: 3px;
+    font-size: 25px;
+    box-shadow: 2px 2px 2px 2px black;
+    float: right;
+    width: 50%;
+    margin: 5px 0;
+}
+
+
+fieldset{
+    box-shadow: 4px 4px 4px 4px black;
+    border-radius: 20px;
+}
+
+
+legend{
+    text-transform: uppercase;
+    color: orange;
+    font-size: 60px;
+    text-shadow: 2px 2px 2px black;
+}
+
+
+/******responsive web design******
+*********************************/
+@media only screen and (max-width:1000px)
+{
+
+   div.contenedor
+   {
+    width: 100%;
+    margin: 0 auto; 
+    padding: 0;
+    border: 1px solid orange;
+    border-radius: 20px;
+   box-shadow: 4px 4px 4px 4px black;
+   }
+
+   div.contenido
+   {
+       width: 100%;
+       
+   }
+
+   header img
+   {
+       width: 100%;
+       display: inline-block;
+       margin: 0;
+   }
+
+   section{
+       width: 100%;
+   }
+   
+   input
+   {
+       width: 100%;
+   }
+
+.contenedor-trabajador{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.formulario-trabajador{
+    width: 100%;
+}
+
+table,thead,th,tbody,tr,td{
+    border: 2px solid black;
+    margin: 0 auto;
+    padding: 1px;
+    text-transform: uppercase;
+    width: 100%;
+    display: inline-block;
+}
+
+legend{
+    font-size: 30px;
+    width: 100%;
+}
+.col-12{
+       float: left;
+       width: 100%;
+}
+
+.label-trabajador{
+    font-size: 20px;
+   margin: 10px 0;
+    width: 50%;
+    text-shadow: none;
+}
+
+.input-trabajador{
+    font-size: 15px;
+    margin: 10px 0;
+    width: 50%;
+}
+
+h2{
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+div.contenedor-menu{
+    width: 100%;
+    margin: 0 auto;
+}
+div.table-menu{
+    width: 100%;
+    margin: 0 auto;
+}
+
+div.contenido-tabla{
+    width: 100%;
+    margin: 0 auto;
+}
+table thead{
+    width: 100%;
+    margin: 0 auto;
+}
+
+table tbody{
+    width: 100%;
+    margin: 0 auto;
+}
+div.contenido-tbody{
+    width: 100%;
+}
+
+div.contenido-thead{
+    width: 100%;
+}
+
+td a{
+    text-decoration: none;
+    list-style: none;
+    color: red;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header p{
+    text-transform: uppercase;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+}
