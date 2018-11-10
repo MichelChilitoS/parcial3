@@ -1,7 +1,8 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
+$servername = getenv("MYSQL_SERVICE_HOST");
+$db_port = getenv("MYSQL_SERVICE_PORT");
+$username = "michelch";
+$password = "michel123";
 $database = "michelangelotrucking";
 
 // Create connection
