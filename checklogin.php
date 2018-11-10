@@ -4,10 +4,11 @@ session_start();
 
 <?php
 
-$host_db = "localhost";
-$user_db = "root";
-$pass_db = "";
-$db_name = "michelangelotrucking";
+$servername = getenv("MYSQL_SERVICE_HOST");
+$db_port = getenv("MYSQL_SERVICE_PORT");
+$username = "michelch";
+$password = "michel123";
+$database = "michelangelotrucking";
 
 $conexion = new mysqli($host_db, $user_db, $pass_db, $db_name);
 
